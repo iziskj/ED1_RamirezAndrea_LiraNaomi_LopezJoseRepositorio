@@ -29,94 +29,204 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        btnIngresar = new javax.swing.JButton();
-        btnIngresar1 = new javax.swing.JButton();
-        btnIngresar2 = new javax.swing.JButton();
+        btnGestionarMascotas = new javax.swing.JButton();
+        btnCerrarSesion = new javax.swing.JButton();
+        btnRegistrarMascota = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel3 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        btnCerrarSesionAdmin = new javax.swing.JButton();
+        btnGestionMascotas = new javax.swing.JButton();
+        btnGuardarReporte9 = new javax.swing.JButton();
+        btn = new javax.swing.JButton();
+        jSeparator2 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(102, 255, 0));
 
-        jPanel4.setBackground(new java.awt.Color(102, 255, 0));
+        jPanel4.setBackground(new java.awt.Color(248, 249, 251));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setText("MENU PRINCIPAL");
+        btnGestionarMascotas.setBackground(new java.awt.Color(49, 110, 174));
+        btnGestionarMascotas.setFont(new java.awt.Font("Nirmala UI", 1, 16)); // NOI18N
+        btnGestionarMascotas.setForeground(new java.awt.Color(255, 255, 255));
+        btnGestionarMascotas.setText("Gestionar Mascotas");
+        btnGestionarMascotas.addActionListener(this::btnGestionarMascotasActionPerformed);
 
-        btnIngresar.setBackground(new java.awt.Color(153, 153, 255));
-        btnIngresar.setFont(new java.awt.Font("Nirmala UI", 1, 16)); // NOI18N
-        btnIngresar.setForeground(new java.awt.Color(255, 255, 255));
-        btnIngresar.setText("Gestionar Mascotas");
-        btnIngresar.addActionListener(this::btnIngresarActionPerformed);
+        btnCerrarSesion.setBackground(new java.awt.Color(255, 153, 153));
+        btnCerrarSesion.setFont(new java.awt.Font("Nirmala UI", 1, 16)); // NOI18N
+        btnCerrarSesion.setForeground(new java.awt.Color(216, 84, 85));
+        btnCerrarSesion.setText("Cerrar Sesión");
+        btnCerrarSesion.addActionListener(this::btnCerrarSesionActionPerformed);
 
-        btnIngresar1.setBackground(new java.awt.Color(153, 153, 255));
-        btnIngresar1.setFont(new java.awt.Font("Nirmala UI", 1, 16)); // NOI18N
-        btnIngresar1.setForeground(new java.awt.Color(255, 255, 255));
-        btnIngresar1.setText("Cerrar Sesión");
-        btnIngresar1.addActionListener(this::btnIngresar1ActionPerformed);
+        btnRegistrarMascota.setBackground(new java.awt.Color(49, 110, 174));
+        btnRegistrarMascota.setFont(new java.awt.Font("Nirmala UI", 1, 16)); // NOI18N
+        btnRegistrarMascota.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegistrarMascota.setText("Registrar mascota");
+        btnRegistrarMascota.addActionListener(this::btnRegistrarMascotaActionPerformed);
 
-        btnIngresar2.setBackground(new java.awt.Color(153, 153, 255));
-        btnIngresar2.setFont(new java.awt.Font("Nirmala UI", 1, 16)); // NOI18N
-        btnIngresar2.setForeground(new java.awt.Color(255, 255, 255));
-        btnIngresar2.setText("Registrar mascota");
-        btnIngresar2.addActionListener(this::btnIngresar2ActionPerformed);
+        jLabel2.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(43, 100, 156));
+        jLabel2.setText("Menú Principal");
+
+        jLabel3.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(43, 100, 156));
+        jLabel3.setText("AdoptCare");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(256, 256, 256)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGap(0, 231, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnIngresar1, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnIngresar2, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(137, 137, 137))
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(189, 189, 189)
+                        .addComponent(btnGestionarMascotas))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(btnRegistrarMascota, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(74, 188, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 522, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 57, Short.MAX_VALUE)))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jLabel1)
-                .addGap(63, 63, 63)
-                .addComponent(btnIngresar2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42)
-                .addComponent(btnIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42)
-                .addComponent(btnIngresar1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addGap(8, 8, 8)
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addGap(46, 46, 46)
+                .addComponent(btnRegistrarMascota, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(btnGestionarMascotas, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
+            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGap(37, 37, 37)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(403, Short.MAX_VALUE)))
+        );
+
+        jPanel2.setBackground(new java.awt.Color(248, 249, 251));
+        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        btnCerrarSesionAdmin.setBackground(new java.awt.Color(248, 249, 251));
+        btnCerrarSesionAdmin.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        btnCerrarSesionAdmin.setText("Cerrar sesión");
+        btnCerrarSesionAdmin.setBorder(null);
+        btnCerrarSesionAdmin.addActionListener(this::btnCerrarSesionAdminActionPerformed);
+
+        btnGestionMascotas.setBackground(new java.awt.Color(248, 249, 251));
+        btnGestionMascotas.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        btnGestionMascotas.setText("Gestión de mascotas");
+        btnGestionMascotas.setBorder(null);
+        btnGestionMascotas.addActionListener(this::btnGestionMascotasActionPerformed);
+
+        btnGuardarReporte9.setBackground(new java.awt.Color(248, 249, 251));
+        btnGuardarReporte9.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        btnGuardarReporte9.setText("Registrar Mascota");
+        btnGuardarReporte9.setBorder(null);
+        btnGuardarReporte9.addActionListener(this::btnGuardarReporte9ActionPerformed);
+
+        btn.setBackground(new java.awt.Color(49, 110, 174));
+        btn.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        btn.setForeground(new java.awt.Color(255, 255, 255));
+        btn.setText("Menú Principal");
+        btn.setBorder(null);
+        btn.addActionListener(this::btnActionPerformed);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparator2)
+                    .addComponent(btn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnGestionMascotas, javax.swing.GroupLayout.DEFAULT_SIZE, 134, Short.MAX_VALUE)
+                    .addComponent(btnGuardarReporte9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCerrarSesionAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(btn)
+                .addGap(18, 18, 18)
+                .addComponent(btnGestionMascotas)
+                .addGap(18, 18, 18)
+                .addComponent(btnGuardarReporte9)
+                .addGap(72, 72, 72)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnCerrarSesionAdmin)
+                .addContainerGap(232, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
-
-    }//GEN-LAST:event_btnIngresarActionPerformed
-
-    private void btnIngresar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresar1ActionPerformed
+    private void btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnIngresar1ActionPerformed
+    }//GEN-LAST:event_btnActionPerformed
 
-    private void btnIngresar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresar2ActionPerformed
+    private void btnGuardarReporte9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarReporte9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnIngresar2ActionPerformed
+    }//GEN-LAST:event_btnGuardarReporte9ActionPerformed
+
+    private void btnGestionMascotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGestionMascotasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGestionMascotasActionPerformed
+
+    private void btnCerrarSesionAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSesionAdminActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrarSesionAdminActionPerformed
+
+    private void btnRegistrarMascotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarMascotaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRegistrarMascotaActionPerformed
+
+    private void btnCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSesionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCerrarSesionActionPerformed
+
+    private void btnGestionarMascotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGestionarMascotasActionPerformed
+
+    }//GEN-LAST:event_btnGestionarMascotasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -144,10 +254,18 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnIngresar;
-    public javax.swing.JButton btnIngresar1;
-    public javax.swing.JButton btnIngresar2;
-    private javax.swing.JLabel jLabel1;
+    public javax.swing.JButton btn;
+    public javax.swing.JButton btnCerrarSesion;
+    public javax.swing.JButton btnCerrarSesionAdmin;
+    public javax.swing.JButton btnGestionMascotas;
+    public javax.swing.JButton btnGestionarMascotas;
+    public javax.swing.JButton btnGuardarReporte9;
+    public javax.swing.JButton btnRegistrarMascota;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
     // End of variables declaration//GEN-END:variables
 }

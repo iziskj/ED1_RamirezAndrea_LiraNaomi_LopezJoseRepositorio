@@ -28,177 +28,59 @@ public class RegistroMascota extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        jSeparator1 = new javax.swing.JSeparator();
         jPanel2 = new javax.swing.JPanel();
-        btnCerrarSesionUser = new javax.swing.JButton();
-        btnGuardarReporte7 = new javax.swing.JButton();
-        btnGuardarReporte8 = new javax.swing.JButton();
-        btnGuardarReporte11 = new javax.swing.JButton();
+        btnCerrarSesion = new javax.swing.JButton();
+        btnGestion = new javax.swing.JButton();
+        btnRegistro = new javax.swing.JButton();
+        btnInicio = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        txtNombreReportante = new javax.swing.JTextField();
-        txtDireccion = new javax.swing.JTextField();
-        btnGuardarReporte = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
-        jLabel14 = new javax.swing.JLabel();
-        txtDireccion1 = new javax.swing.JTextField();
-        txtDireccion2 = new javax.swing.JTextField();
-        jLabel15 = new javax.swing.JLabel();
-        cmbTipoResiduo = new javax.swing.JComboBox<>();
         jLabel16 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        cmbEstadoAdopcion = new javax.swing.JComboBox<>();
+        btnEnviarReporte = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        txtNombreMascota = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jLabel10 = new javax.swing.JLabel();
+        txtRaza = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        txtColor = new javax.swing.JTextField();
+        txtEdad = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(248, 249, 251));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(248, 249, 251));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        btnCerrarSesionUser.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
-        btnCerrarSesionUser.setText("Cerrar sesión");
-        btnCerrarSesionUser.setBorder(null);
-        btnCerrarSesionUser.addActionListener(this::btnCerrarSesionUserActionPerformed);
+        btnCerrarSesion.setBackground(new java.awt.Color(248, 249, 251));
+        btnCerrarSesion.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        btnCerrarSesion.setText("Cerrar sesión");
+        btnCerrarSesion.setBorder(null);
+        btnCerrarSesion.addActionListener(this::btnCerrarSesionActionPerformed);
 
-        btnGuardarReporte7.setBackground(new java.awt.Color(204, 255, 204));
-        btnGuardarReporte7.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
-        btnGuardarReporte7.setText("Registro");
-        btnGuardarReporte7.setBorder(null);
-        btnGuardarReporte7.addActionListener(this::btnGuardarReporte7ActionPerformed);
+        btnGestion.setBackground(new java.awt.Color(248, 249, 251));
+        btnGestion.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        btnGestion.setText("Gestión de mascotas");
+        btnGestion.setBorder(null);
+        btnGestion.addActionListener(this::btnGestionActionPerformed);
 
-        btnGuardarReporte8.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
-        btnGuardarReporte8.setText("Gestion");
-        btnGuardarReporte8.setBorder(null);
-        btnGuardarReporte8.addActionListener(this::btnGuardarReporte8ActionPerformed);
+        btnRegistro.setBackground(new java.awt.Color(49, 110, 174));
+        btnRegistro.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        btnRegistro.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegistro.setText("Registrar Mascota");
+        btnRegistro.setBorder(null);
+        btnRegistro.addActionListener(this::btnRegistroActionPerformed);
 
-        btnGuardarReporte11.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
-        btnGuardarReporte11.setText("Inicio");
-        btnGuardarReporte11.setBorder(null);
-        btnGuardarReporte11.addActionListener(this::btnGuardarReporte11ActionPerformed);
-
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jLabel4.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel4.setText("Nombre de la mascota:");
-
-        jLabel6.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel6.setText("Raza:");
-
-        txtNombreReportante.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
-
-        txtDireccion.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
-
-        btnGuardarReporte.setBackground(new java.awt.Color(255, 102, 255));
-        btnGuardarReporte.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
-        btnGuardarReporte.setForeground(new java.awt.Color(255, 255, 255));
-        btnGuardarReporte.setText("Enviar reporte");
-        btnGuardarReporte.addActionListener(this::btnGuardarReporteActionPerformed);
-
-        btnLimpiar.setBackground(new java.awt.Color(255, 102, 255));
-        btnLimpiar.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
-        btnLimpiar.setForeground(new java.awt.Color(255, 255, 255));
-        btnLimpiar.setText("Limpiar");
-        btnLimpiar.addActionListener(this::btnLimpiarActionPerformed);
-
-        jLabel14.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel14.setText("Color:");
-
-        txtDireccion1.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
-        txtDireccion1.addActionListener(this::txtDireccion1ActionPerformed);
-
-        txtDireccion2.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
-        txtDireccion2.addActionListener(this::txtDireccion2ActionPerformed);
-
-        jLabel15.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel15.setText("Edad:");
-
-        cmbTipoResiduo.setBackground(new java.awt.Color(229, 229, 229));
-        cmbTipoResiduo.setFont(new java.awt.Font("Nirmala UI", 0, 13)); // NOI18N
-        cmbTipoResiduo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Adoptado", "No adoptado", " " }));
-
-        jLabel16.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel16.setText("Estado de adopcion:");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel15)
-                    .addComponent(jLabel16))
-                .addGap(22, 22, 22)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(btnGuardarReporte, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 126, Short.MAX_VALUE))
-                    .addComponent(txtDireccion, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtNombreReportante)
-                    .addComponent(txtDireccion1)
-                    .addComponent(txtDireccion2)
-                    .addComponent(cmbTipoResiduo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(19, 19, 19))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(8, 8, 8)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(txtNombreReportante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel14)
-                    .addComponent(txtDireccion1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(16, 16, 16)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtDireccion2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel15))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cmbTipoResiduo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel16))
-                .addGap(40, 40, 40)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnGuardarReporte)
-                    .addComponent(btnLimpiar))
-                .addContainerGap(25, Short.MAX_VALUE))
-        );
-
-        jLabel11.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(51, 102, 0));
-        jLabel11.setText("Gestion de mascotas");
-
-        jLabel12.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(51, 102, 0));
-        jLabel12.setText("Gestion de mascotas");
-
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel1.setText("Registro de mascotas");
+        btnInicio.setBackground(new java.awt.Color(248, 249, 251));
+        btnInicio.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        btnInicio.setText("Menú Principal");
+        btnInicio.setBorder(null);
+        btnInicio.addActionListener(this::btnInicioActionPerformed);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -208,154 +90,212 @@ public class RegistroMascota extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jSeparator2)
-                    .addComponent(btnGuardarReporte11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnCerrarSesionUser, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE)
-                    .addComponent(btnGuardarReporte7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnGuardarReporte8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(195, 195, 195)
-                        .addComponent(jLabel1)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel2Layout.createSequentialGroup()
-                    .addGap(272, 272, 272)
-                    .addComponent(jLabel11)
-                    .addContainerGap(273, Short.MAX_VALUE)))
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel2Layout.createSequentialGroup()
-                    .addGap(272, 272, 272)
-                    .addComponent(jLabel12)
-                    .addContainerGap(273, Short.MAX_VALUE)))
+                    .addComponent(btnInicio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnGestion, javax.swing.GroupLayout.DEFAULT_SIZE, 134, Short.MAX_VALUE)
+                    .addComponent(btnRegistro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCerrarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnGuardarReporte11)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(btnInicio)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnGuardarReporte7)
-                    .addComponent(jLabel1))
+                .addComponent(btnGestion)
                 .addGap(18, 18, 18)
-                .addComponent(btnGuardarReporte8)
-                .addGap(18, 18, 18)
+                .addComponent(btnRegistro)
+                .addGap(72, 72, 72)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnCerrarSesionUser)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel2Layout.createSequentialGroup()
-                    .addGap(215, 215, 215)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(217, Short.MAX_VALUE)))
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel2Layout.createSequentialGroup()
-                    .addGap(215, 215, 215)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(217, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnCerrarSesion)
+                .addContainerGap(292, Short.MAX_VALUE))
         );
+
+        btnLimpiar.setBackground(new java.awt.Color(49, 110, 174));
+        btnLimpiar.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        btnLimpiar.setForeground(new java.awt.Color(255, 255, 255));
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(this::btnLimpiarActionPerformed);
+
+        jLabel16.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jLabel16.setText("Estado de ");
+
+        jLabel11.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jLabel11.setText("Raza:");
+
+        cmbEstadoAdopcion.setFont(new java.awt.Font("Nirmala UI", 0, 13)); // NOI18N
+        cmbEstadoAdopcion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Adoptado", "No adoptado", " " }));
+        cmbEstadoAdopcion.addActionListener(this::cmbEstadoAdopcionActionPerformed);
+
+        btnEnviarReporte.setBackground(new java.awt.Color(49, 110, 174));
+        btnEnviarReporte.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        btnEnviarReporte.setForeground(new java.awt.Color(255, 255, 255));
+        btnEnviarReporte.setText("Enviar reporte");
+        btnEnviarReporte.addActionListener(this::btnEnviarReporteActionPerformed);
+
+        jLabel4.setBackground(new java.awt.Color(248, 249, 251));
+        jLabel4.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel4.setText("Nombre:");
+
+        txtNombreMascota.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        txtNombreMascota.addActionListener(this::txtNombreMascotaActionPerformed);
 
         jLabel2.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 153, 0));
-        jLabel2.setText("TecnoVerde Cuernavaca");
+        jLabel2.setForeground(new java.awt.Color(43, 100, 156));
+        jLabel2.setText("AdoptCare");
 
-        jLabel3.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 102, 0));
-        jLabel3.setText("Registro de reporte ambiental");
+        jLabel3.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(43, 100, 156));
+        jLabel3.setText("Registro de Mascota");
 
-        jLabel10.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
-        jLabel10.setText("Inicio de sesión / Reportes");
+        txtRaza.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        txtRaza.addActionListener(this::txtRazaActionPerformed);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSeparator1)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel10)))
-                        .addContainerGap())
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(136, 136, 136)
-                        .addComponent(jLabel3)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel10))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
-                .addGap(10, 380, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        jLabel12.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jLabel12.setText("Color: ");
+
+        jLabel13.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jLabel13.setText("Edad");
+
+        txtColor.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        txtColor.addActionListener(this::txtColorActionPerformed);
+
+        txtEdad.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        txtEdad.addActionListener(this::txtEdadActionPerformed);
+
+        jLabel17.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        jLabel17.setText("adopción:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparator1)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(11, 11, 11)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel16))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addGap(101, 101, 101)
+                                        .addComponent(txtNombreMascota, javax.swing.GroupLayout.PREFERRED_SIZE, 487, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(6, 6, 6)
+                                        .addComponent(jLabel17)
+                                        .addGap(41, 41, 41)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(txtColor)
+                                            .addComponent(txtEdad)
+                                            .addComponent(txtRaza)
+                                            .addComponent(cmbEstadoAdopcion, 0, 487, Short.MAX_VALUE)))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnEnviarReporte, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(22, 22, 22)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel4)
+                            .addComponent(txtNombreMascota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtRaza, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtColor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(255, 255, 255)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cmbEstadoAdopcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel16)
+                            .addComponent(jLabel17))
+                        .addGap(29, 29, 29)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnEnviarReporte, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCerrarSesionUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSesionUserActionPerformed
+    private void btnCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSesionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCerrarSesionUserActionPerformed
+    }//GEN-LAST:event_btnCerrarSesionActionPerformed
 
-    private void btnGuardarReporte7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarReporte7ActionPerformed
+    private void btnGestionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGestionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarReporte7ActionPerformed
+    }//GEN-LAST:event_btnGestionActionPerformed
 
-    private void btnGuardarReporte8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarReporte8ActionPerformed
+    private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarReporte8ActionPerformed
+    }//GEN-LAST:event_btnRegistroActionPerformed
 
-    private void btnGuardarReporte11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarReporte11ActionPerformed
+    private void btnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarReporte11ActionPerformed
+    }//GEN-LAST:event_btnInicioActionPerformed
 
-    private void btnGuardarReporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarReporteActionPerformed
+    private void txtNombreMascotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreMascotaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarReporteActionPerformed
+    }//GEN-LAST:event_txtNombreMascotaActionPerformed
+
+    private void btnEnviarReporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarReporteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEnviarReporteActionPerformed
+
+    private void txtEdadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEdadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEdadActionPerformed
+
+    private void cmbEstadoAdopcionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEstadoAdopcionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbEstadoAdopcionActionPerformed
+
+    private void txtColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtColorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtColorActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
-    private void txtDireccion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDireccion1ActionPerformed
+    private void txtRazaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRazaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtDireccion1ActionPerformed
-
-    private void txtDireccion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDireccion2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtDireccion2ActionPerformed
+    }//GEN-LAST:event_txtRazaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -383,32 +323,27 @@ public class RegistroMascota extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnCerrarSesionUser;
-    public javax.swing.JButton btnGuardarReporte;
-    private javax.swing.JButton btnGuardarReporte11;
-    private javax.swing.JButton btnGuardarReporte7;
-    private javax.swing.JButton btnGuardarReporte8;
+    public javax.swing.JButton btnCerrarSesion;
+    public javax.swing.JButton btnEnviarReporte;
+    public javax.swing.JButton btnGestion;
+    public javax.swing.JButton btnInicio;
     public javax.swing.JButton btnLimpiar;
-    public javax.swing.JComboBox<String> cmbTipoResiduo;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
+    public javax.swing.JButton btnRegistro;
+    public javax.swing.JComboBox<String> cmbEstadoAdopcion;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    public javax.swing.JTextField txtDireccion;
-    public javax.swing.JTextField txtDireccion1;
-    public javax.swing.JTextField txtDireccion2;
-    public javax.swing.JTextField txtNombreReportante;
+    public javax.swing.JTextField txtColor;
+    public javax.swing.JTextField txtEdad;
+    public javax.swing.JTextField txtNombreMascota;
+    public javax.swing.JTextField txtRaza;
     // End of variables declaration//GEN-END:variables
 }

@@ -30,29 +30,29 @@ public class GestionMascotas extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        btnCerrarSesionAdmin = new javax.swing.JButton();
-        btnGuardarReporte7 = new javax.swing.JButton();
-        btnGuardarReporte9 = new javax.swing.JButton();
-        btnGuardarReporte11 = new javax.swing.JButton();
+        btnCerrarSesion = new javax.swing.JButton();
+        btnRegistro = new javax.swing.JButton();
+        btnGestion = new javax.swing.JButton();
+        btnInicio = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jPanel3 = new javax.swing.JPanel();
-        paneTablaUsuarios = new javax.swing.JScrollPane();
+        paneTablaMascotas = new javax.swing.JScrollPane();
         btnEliminar = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
-        btnEliminar1 = new javax.swing.JButton();
+        btnActualizar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        txtNombreReportante = new javax.swing.JTextField();
+        txtNombreMascota = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        txtDireccion = new javax.swing.JTextField();
+        txtRaza = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        txtDireccion1 = new javax.swing.JTextField();
+        txtColor = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
-        txtDireccion2 = new javax.swing.JTextField();
+        txtEdad = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
-        cmbTipoResiduo = new javax.swing.JComboBox<>();
+        cmbEstadoAdopcion = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -61,26 +61,26 @@ public class GestionMascotas extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        btnCerrarSesionAdmin.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
-        btnCerrarSesionAdmin.setText("Cerrar sesión");
-        btnCerrarSesionAdmin.setBorder(null);
-        btnCerrarSesionAdmin.addActionListener(this::btnCerrarSesionAdminActionPerformed);
+        btnCerrarSesion.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
+        btnCerrarSesion.setText("Cerrar sesión");
+        btnCerrarSesion.setBorder(null);
+        btnCerrarSesion.addActionListener(this::btnCerrarSesionActionPerformed);
 
-        btnGuardarReporte7.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
-        btnGuardarReporte7.setText("Registro");
-        btnGuardarReporte7.setBorder(null);
-        btnGuardarReporte7.addActionListener(this::btnGuardarReporte7ActionPerformed);
+        btnRegistro.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
+        btnRegistro.setText("Registro");
+        btnRegistro.setBorder(null);
+        btnRegistro.addActionListener(this::btnRegistroActionPerformed);
 
-        btnGuardarReporte9.setBackground(new java.awt.Color(204, 255, 204));
-        btnGuardarReporte9.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
-        btnGuardarReporte9.setText("Gestion");
-        btnGuardarReporte9.setBorder(null);
-        btnGuardarReporte9.addActionListener(this::btnGuardarReporte9ActionPerformed);
+        btnGestion.setBackground(new java.awt.Color(204, 255, 204));
+        btnGestion.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
+        btnGestion.setText("Gestion");
+        btnGestion.setBorder(null);
+        btnGestion.addActionListener(this::btnGestionActionPerformed);
 
-        btnGuardarReporte11.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
-        btnGuardarReporte11.setText("Inicio");
-        btnGuardarReporte11.setBorder(null);
-        btnGuardarReporte11.addActionListener(this::btnGuardarReporte11ActionPerformed);
+        btnInicio.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
+        btnInicio.setText("Inicio");
+        btnInicio.setBorder(null);
+        btnInicio.addActionListener(this::btnInicioActionPerformed);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -90,25 +90,25 @@ public class GestionMascotas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jSeparator2)
-                    .addComponent(btnGuardarReporte11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnGuardarReporte7, javax.swing.GroupLayout.DEFAULT_SIZE, 134, Short.MAX_VALUE)
-                    .addComponent(btnGuardarReporte9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnCerrarSesionAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnInicio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnRegistro, javax.swing.GroupLayout.DEFAULT_SIZE, 134, Short.MAX_VALUE)
+                    .addComponent(btnGestion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCerrarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnGuardarReporte11)
+                .addComponent(btnInicio)
                 .addGap(18, 18, 18)
-                .addComponent(btnGuardarReporte7)
+                .addComponent(btnRegistro)
                 .addGap(18, 18, 18)
-                .addComponent(btnGuardarReporte9)
+                .addComponent(btnGestion)
                 .addGap(86, 86, 86)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnCerrarSesionAdmin)
+                .addComponent(btnCerrarSesion)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -123,7 +123,7 @@ public class GestionMascotas extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        paneTablaUsuarios.setBackground(new java.awt.Color(255, 255, 255));
+        paneTablaMascotas.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -131,14 +131,14 @@ public class GestionMascotas extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(paneTablaUsuarios)
+                .addComponent(paneTablaMascotas)
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(paneTablaUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(paneTablaMascotas, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -149,43 +149,43 @@ public class GestionMascotas extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
         jLabel11.setText("Mascotas registradas");
 
-        btnEliminar1.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
-        btnEliminar1.setText("Actualizar");
-        btnEliminar1.addActionListener(this::btnEliminar1ActionPerformed);
+        btnActualizar.setFont(new java.awt.Font("Nirmala UI", 0, 12)); // NOI18N
+        btnActualizar.setText("Actualizar");
+        btnActualizar.addActionListener(this::btnActualizarActionPerformed);
 
         jLabel4.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(51, 51, 51));
         jLabel4.setText("Nombre de la mascota:");
 
-        txtNombreReportante.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        txtNombreMascota.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(51, 51, 51));
         jLabel6.setText("Raza:");
 
-        txtDireccion.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        txtRaza.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
 
         jLabel14.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(51, 51, 51));
         jLabel14.setText("Color:");
 
-        txtDireccion1.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
-        txtDireccion1.addActionListener(this::txtDireccion1ActionPerformed);
+        txtColor.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        txtColor.addActionListener(this::txtColorActionPerformed);
 
         jLabel15.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(51, 51, 51));
         jLabel15.setText("Edad:");
 
-        txtDireccion2.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
-        txtDireccion2.addActionListener(this::txtDireccion2ActionPerformed);
+        txtEdad.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
+        txtEdad.addActionListener(this::txtEdadActionPerformed);
 
         jLabel16.setFont(new java.awt.Font("Nirmala UI", 1, 12)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(51, 51, 51));
         jLabel16.setText("Estado de adopcion:");
 
-        cmbTipoResiduo.setBackground(new java.awt.Color(229, 229, 229));
-        cmbTipoResiduo.setFont(new java.awt.Font("Nirmala UI", 0, 13)); // NOI18N
-        cmbTipoResiduo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Adoptado", "No adoptado", " " }));
+        cmbEstadoAdopcion.setBackground(new java.awt.Color(229, 229, 229));
+        cmbEstadoAdopcion.setFont(new java.awt.Font("Nirmala UI", 0, 13)); // NOI18N
+        cmbEstadoAdopcion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Adoptado", "No adoptado", " " }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -208,7 +208,7 @@ public class GestionMascotas extends javax.swing.JFrame {
                                                 .addComponent(jLabel16)
                                                 .addGap(0, 0, Short.MAX_VALUE))
                                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(btnEliminar1, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                                                 .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -227,20 +227,20 @@ public class GestionMascotas extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel6)
                                 .addGap(104, 104, 104)
-                                .addComponent(txtDireccion))
+                                .addComponent(txtRaza))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtNombreReportante))
+                                .addComponent(txtNombreMascota))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel14)
                                     .addComponent(jLabel15))
                                 .addGap(101, 101, 101)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtDireccion1)
-                                    .addComponent(txtDireccion2)
-                                    .addComponent(cmbTipoResiduo, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                    .addComponent(txtColor)
+                                    .addComponent(txtEdad)
+                                    .addComponent(cmbEstadoAdopcion, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                         .addGap(47, 47, 47))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -255,27 +255,27 @@ public class GestionMascotas extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(txtNombreReportante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNombreMascota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtRaza, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel14)
-                    .addComponent(txtDireccion1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtColor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel15)
-                    .addComponent(txtDireccion2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16)
-                    .addComponent(cmbTipoResiduo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cmbEstadoAdopcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnEliminar1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -298,37 +298,37 @@ public class GestionMascotas extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCerrarSesionAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSesionAdminActionPerformed
+    private void btnCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSesionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCerrarSesionAdminActionPerformed
+    }//GEN-LAST:event_btnCerrarSesionActionPerformed
 
-    private void btnGuardarReporte7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarReporte7ActionPerformed
+    private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarReporte7ActionPerformed
+    }//GEN-LAST:event_btnRegistroActionPerformed
 
-    private void btnGuardarReporte9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarReporte9ActionPerformed
+    private void btnGestionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGestionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarReporte9ActionPerformed
+    }//GEN-LAST:event_btnGestionActionPerformed
 
-    private void btnGuardarReporte11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarReporte11ActionPerformed
+    private void btnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarReporte11ActionPerformed
+    }//GEN-LAST:event_btnInicioActionPerformed
 
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnEliminarActionPerformed
 
-    private void btnEliminar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminar1ActionPerformed
+    private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminar1ActionPerformed
+    }//GEN-LAST:event_btnActualizarActionPerformed
 
-    private void txtDireccion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDireccion1ActionPerformed
+    private void txtColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtColorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtDireccion1ActionPerformed
+    }//GEN-LAST:event_txtColorActionPerformed
 
-    private void txtDireccion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDireccion2ActionPerformed
+    private void txtEdadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEdadActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtDireccion2ActionPerformed
+    }//GEN-LAST:event_txtEdadActionPerformed
 
     /**
      * @param args the command line arguments
@@ -356,13 +356,13 @@ public class GestionMascotas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnCerrarSesionAdmin;
+    public javax.swing.JButton btnActualizar;
+    public javax.swing.JButton btnCerrarSesion;
     public javax.swing.JButton btnEliminar;
-    public javax.swing.JButton btnEliminar1;
-    public javax.swing.JButton btnGuardarReporte11;
-    public javax.swing.JButton btnGuardarReporte7;
-    public javax.swing.JButton btnGuardarReporte9;
-    public javax.swing.JComboBox<String> cmbTipoResiduo;
+    public javax.swing.JButton btnGestion;
+    public javax.swing.JButton btnInicio;
+    public javax.swing.JButton btnRegistro;
+    public javax.swing.JComboBox<String> cmbEstadoAdopcion;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
@@ -376,10 +376,10 @@ public class GestionMascotas extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    public javax.swing.JScrollPane paneTablaUsuarios;
-    public javax.swing.JTextField txtDireccion;
-    public javax.swing.JTextField txtDireccion1;
-    public javax.swing.JTextField txtDireccion2;
-    public javax.swing.JTextField txtNombreReportante;
+    public javax.swing.JScrollPane paneTablaMascotas;
+    public javax.swing.JTextField txtColor;
+    public javax.swing.JTextField txtEdad;
+    public javax.swing.JTextField txtNombreMascota;
+    public javax.swing.JTextField txtRaza;
     // End of variables declaration//GEN-END:variables
 }
